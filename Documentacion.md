@@ -1,4 +1,4 @@
-<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/b60f8b10-35aa-4c18-aa8c-456975cd7453" /># Proyecto Cepeda
+
 
 ### Unity version: 6-3 LTS (6000.3.0f1)
 
