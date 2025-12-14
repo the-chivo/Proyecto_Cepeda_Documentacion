@@ -12,7 +12,7 @@ Toda la parte grafica en 2d estara gestionada en Sprite haciendo uso de Sprite r
 * Para los fondos: https://finalbossblues.itch.io/cloud-city-tileset
 * Para el player: https://github.com/kiyama14/tutorial-art
 
-### Fondo
+## Fondo
 
 Dentro de la carpeta de los fondos hay un png llamado tile_set con un monton de sprites de fondos, arrastramos esa imagen a asests de nuestro proyecto en una carpeta o lo que quieras.
 Al clicar el tileset se nos abrira el inspectgor y es necesario hacer los siguiente cambios:
