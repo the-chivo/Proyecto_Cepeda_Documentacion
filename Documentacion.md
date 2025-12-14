@@ -48,4 +48,14 @@ Seleccionamos el tileSet que teniamos previamente sliceado y lo arrastramos a la
 Nos pedira un folder, seleccionaremos el folder llamado Tiles que creamos antes.
 Una vez hecho ya tenemos todas las herramientas necesarias para pintar el backGround
 
+## Player(Sprite y movimiento)
+
+Incluire el movimiento tambien por que es muy simple.
+
+Para el sprite del player hay que hacer lo mismo que con el backGround, pero es preferible hacerlo en una carpeta llamada player o lo que sea por orden.
+Una vez hecho las mismas configuraciones que con el png de background vamos al sprite editor con la diferencia de que en vez de darle 16 de pixel size en el eje y le darenmos 32 que es el doble, esto es por que el personaje es el doble de alto que de ancho por lo tanto ya no es cuadrado.
+
+![Imagen](Images/playerEditor.png)
+
+
 
