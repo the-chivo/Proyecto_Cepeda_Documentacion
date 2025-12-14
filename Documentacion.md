@@ -24,4 +24,4 @@ Inportante clicar en apply despues de los cambios.
 En el inspector veremos un boton llamado Sprite Editor, es con lo que vamos a separar la imagen en pequeños sprites del tamaño deseado, en este caso como es para un fondo los cortaremos como cuadrado al tamaño de cada "cuadrito".
 Al abrir el editor clicar en Slice arriba a la izquierda y en Type cambiar a Grid by Cell Size y en pixel size el eje x en 16 y el eje y en 16.
 
-![Imagen](Images/capEditor.png)
+![Imagen](Images/editorCap.png)
