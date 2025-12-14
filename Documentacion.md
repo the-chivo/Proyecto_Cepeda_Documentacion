@@ -75,7 +75,6 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
         [SerializeField] private Animator animator;
 
         private Vector2 input;
-        private Vector2 lastInput;
 
         void Awake()
         {
@@ -114,13 +113,9 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
         {
             // Movimiento con Rigidbody2D
            
-                rb.MovePosition(rb.position + input * speed * Time.fixedDeltaTime);
-
-                
+                rb.MovePosition(rb.position + input * speed * Time.fixedDeltaTime);                
             
-        }
-
-        
+        }        
 
     }
 ```
