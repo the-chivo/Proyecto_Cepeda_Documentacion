@@ -32,6 +32,7 @@ Para enpezar a pintar el fondo debemos de crear un: 2D Object ---> TileMap ---> 
 
 Se nos creara un grid y nuestro fondo dentro del grid que lo llamaremos background o nonCollisionLow.
 Para enpezar a pintar necesitamos una Tile Palete que es una ventanita, para sacarla vamos a: Window ---> 2D ---> Tile Palete.
+
 Se nos abrira esta ventana:
 
 ![Imagen](Images/tilePalete.png)
