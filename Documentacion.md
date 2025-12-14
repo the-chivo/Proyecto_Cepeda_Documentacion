@@ -58,4 +58,100 @@ Una vez hecho las mismas configuraciones que con el png de background vamos al s
 ![Imagen](Images/playerEditor.png)
 
 
+Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. Este va a ser nuestro player y le asignaremos un Script de movimiento. El script es el siguiente
+
+```
+ using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using Unity.Mathematics;
+    using UnityEngine;
+    using UnityEngine.InputSystem;
+
+    public class movimiento : MonoBehaviour
+    {
+        [SerializeField] private float speed = 5f;
+        [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private Animator animator;
+
+        private Vector2 input;
+        private Vector2 lastInput;
+        private bool isMoving;
+        private bool isWalckable;
+        public LayerMask solidsObjectsLayer;
+        public Vector2 boxSize;
+
+        void Awake()
+        {
+            if (rb == null)
+            {
+                rb = GetComponent<Rigidbody2D>();
+            }
+        }
+
+        void Update()
+        {
+            // Reset input
+            input = Vector2.zero;
+
+            if (Keyboard.current != null)
+            {
+                if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed)
+                    input.y += 1f;
+
+                if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
+                    input.y -= 1f;
+
+                if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+                    input.x -= 1f;
+
+                if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+                    input.x += 1f;
+            }
+
+            // Normalizar para que no se mueva más rápido en diagonal
+            input = input.normalized;
+
+
+            // Animaciones
+            if (animator != null)
+            {
+                if (input != Vector2.zero)
+                {
+                    lastInput = input;
+                    animator.SetFloat("moveX", input.x);
+                    animator.SetFloat("moveY", input.y);
+                    isMoving = true;
+                 
+                                
+                }
+                else
+                {
+                    animator.SetFloat("moveX", lastInput.x);
+                    animator.SetFloat("moveY", lastInput.y);
+                    isMoving = false;
+                }
+
+                animator.SetBool("isMoving", isMoving);
+            }
+                
+            
+        }
+
+        void FixedUpdate()
+        {
+            // Movimiento con Rigidbody2D
+           
+                rb.MovePosition(rb.position + input * speed * Time.fixedDeltaTime);
+                //transform.position += input * speed * Time.fixedDeltaTime;
+                
+            
+        }
+
+        
+
+    }
+```
+
+
 
