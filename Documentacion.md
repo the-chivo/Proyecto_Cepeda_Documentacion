@@ -50,6 +50,7 @@ Una vez hecho ya tenemos todas las herramientas necesarias para pintar el backGr
 
 ## Player(Sprite y movimiento)
 
+
 Incluire el movimiento tambien por que es muy simple.
 
 Para el sprite del player hay que hacer lo mismo que con el backGround, pero es preferible hacerlo en una carpeta llamada player o lo que sea por orden.
@@ -120,5 +121,9 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
     }
 ```
 
-el primer if no es mas que un key.Input pero para unity 6, se normaliza el movimiento y se aplica atraves de un rigid body que tendremos que agregar previamente al sprite del player, ademas de un box Colider 2D
+el primer if no es mas que un key.Input pero para unity 6, se normaliza el movimiento y se aplica atraves de un rigid body que tendremos que agregar previamente al sprite del player, ademas de un box Colider 2D. Es inportante el uso del rigidBody pues luego nos ayudara con las colisiones en general.
+
+
+## Player(Animaciones)
+
 
