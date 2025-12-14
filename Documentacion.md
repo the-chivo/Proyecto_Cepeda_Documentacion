@@ -12,3 +12,14 @@ Toda la parte grafica en 2d estara gestionada en Sprite haciendo uso de Sprite r
 * Para los fondos: https://finalbossblues.itch.io/cloud-city-tileset
 * Para el player: https://github.com/kiyama14/tutorial-art
 
+### Fondo
+
+Dentro de la carpeta de los fondos hay un png llamado tile_set con un monton de sprites de fondos, arrastramos esa imagen a asests de nuestro proyecto en una carpeta o lo que quieras.
+Al clicar el tileset se nos abrira el inspectgor y es necesario hacer los siguiente cambios:
+* Sprite MOde: Multiple
+* Pixels Per Unit: 16
+* Filtrer Mode: Point(No Filter)
+* Compression: None
+Inportante clicar en apply despues de los cambios.
+En el inspector veremos un boton llamado Sprite Editor, es con lo que vamos a separar la imagen en pequeños sprites del tamaño deseado, en este caso como es para un fondo los cortaremos como cuadrado al tamaño de cada "cuadrito".
+Al abrir el editor clicar en Slice arriba a la izquierda y en Type cambiar a Grid by Cell Size y en pixel size el eje x en 16 y el eje y en 16
