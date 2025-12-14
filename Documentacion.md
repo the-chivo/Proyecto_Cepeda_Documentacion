@@ -113,37 +113,13 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
             input = input.normalized;
 
 
-            // Animaciones
-            if (animator != null)
-            {
-                if (input != Vector2.zero)
-                {
-                    lastInput = input;
-                    animator.SetFloat("moveX", input.x);
-                    animator.SetFloat("moveY", input.y);
-                    isMoving = true;
-                 
-                                
-                }
-                else
-                {
-                    animator.SetFloat("moveX", lastInput.x);
-                    animator.SetFloat("moveY", lastInput.y);
-                    isMoving = false;
-                }
-
-                animator.SetBool("isMoving", isMoving);
-            }
-                
-            
-        }
 
         void FixedUpdate()
         {
             // Movimiento con Rigidbody2D
            
                 rb.MovePosition(rb.position + input * speed * Time.fixedDeltaTime);
-                //transform.position += input * speed * Time.fixedDeltaTime;
+
                 
             
         }
