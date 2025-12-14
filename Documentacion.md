@@ -22,6 +22,17 @@ Al clicar el tileset se nos abrira el inspectgor y es necesario hacer los siguie
 * Compression: None
 Inportante clicar en apply despues de los cambios.
 En el inspector veremos un boton llamado Sprite Editor, es con lo que vamos a separar la imagen en pequeños sprites del tamaño deseado, en este caso como es para un fondo los cortaremos como cuadrado al tamaño de cada "cuadrito".
-Al abrir el editor clicar en Slice arriba a la izquierda y en Type cambiar a Grid by Cell Size y en pixel size el eje x en 16 y el eje y en 16.
+Al abrir el editor clicar en Slice arriba a la izquierda y en Type cambiar a Grid by Cell Size y en pixel size el eje x en 16 y el eje y en 16 y clicar el boton Slice y Aply.
 
 ![Imagen](Images/editorCap.png)
+
+Veremos que nuestro png se ha separado en bloques individuales.
+
+Para enpezar a pintar el fondo debemos de crear un: 2D Object ---> TileMap ---> Rectangular
+
+Se nos creara un grid y nuestro fondo dentro del grid que lo llamaremos background o nonCollisionLow.
+Para enpezar a pintar necesitamos una Tile Palete que es una ventanita, para sacarla vamos a: Window ---> 2D ---> Tile Palete.
+Se nos abrira esta ventana:
+
+![Imagen](Images/tilePalete.png)
+
