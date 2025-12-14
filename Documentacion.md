@@ -126,4 +126,18 @@ el primer if no es mas que un key.Input pero para unity 6, se normaliza el movim
 
 ## Player(Animaciones)
 
+Para animar al personaje primero crearemos las distintas animaciones y despues le diremos por codigo cunado usarlas.
+
+### Crear las animaciones
+Haremos 4 para mirar en todas las direcciones que seran solo para cambiar de direccion y otras 4 que seran las 4 direcciones pero andando en vez de parado.
+
+Para sacar el animador vamos a: Window ---> Animation ---> Animation
+
+Clicamos en create para crear nuestra primera animacion. Nos pedira un folder, creamos uno llamado animations y llamamos a nuestra animacion left(por ejemplo)
+Arrastramos el sprite de nuestro personaje mirando quieto a la izquierda, al pulsar play veras si funciona. Deberia de mirar a la izquierda.
+Clicamos en la flechita hacia bajo donde pone left y le damos a Create New Clip y creamos el siguiente clip haciendo lo mismo que con el anterior pero con una nueva direccion.
+Ahora crearemos las 4 de caminar, seguimos los mismos pasos, creamos un nuevo clip (walkLeft por ejemplo) pero ahora tendremos que arrastrar los cuatro sprites de andar y los ponemos en este orden: parado, andando pie derecho, parado, andando pie izquiero. Yo decidi ponerle al final otro de parado por que si no se me bugueaba la animacion, ajustamos cada sprite en la time line para que esten a la misma distancia y estiramos el conjunto para que dure lo que queramos, yo lo deje en 1 segundo.
+
+
+
 
