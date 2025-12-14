@@ -1,4 +1,4 @@
-# Proyecto Cepeda
+<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/b60f8b10-35aa-4c18-aa8c-456975cd7453" /># Proyecto Cepeda
 
 ### Unity version: 6-3 LTS (6000.3.0f1)
 
@@ -36,4 +36,11 @@ Para enpezar a pintar necesitamos una Tile Palete que es una ventanita, para sac
 Se nos abrira esta ventana:
 
 ![Imagen](Images/tilePalete.png)
+
+Clicamos en Create New Palete le asignamos el nombre(background) y clicamos en create, pedira un folder, lo mejor es crear una carpeta en Assets la llamamos Tiles y lo selecionamos.
+
+Seleccionamos el tileSet que teniamos previamente sliceado y lo arrastramos a la Tile Palete
+
+
+![Imagen](Images/tileMover.png)
 
