@@ -44,3 +44,8 @@ Seleccionamos el tileSet que teniamos previamente sliceado y lo arrastramos a la
 
 ![Imagen](Images/tileMover.png)
 
+
+Nos pedira un folder, seleccionaremos el folder llamado Tiles que creamos antes.
+Una vez hecho ya tenemos todas las herramientas necesarias para pintar el backGround
+
+
