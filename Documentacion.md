@@ -76,10 +76,6 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
 
         private Vector2 input;
         private Vector2 lastInput;
-        private bool isMoving;
-        private bool isWalckable;
-        public LayerMask solidsObjectsLayer;
-        public Vector2 boxSize;
 
         void Awake()
         {
@@ -129,5 +125,5 @@ Una vez sliceado arrastramos uno spritye del personaje cualquiera a la escena. E
     }
 ```
 
-
+el primer if no es mas que un key.Input pero para unity 6, se normaliza el movimiento y se aplica atraves de un rigid body que tendremos que agregar previamente al sprite del player, ademas de un box Colider 2D
 
